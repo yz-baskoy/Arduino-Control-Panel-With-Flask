@@ -1,0 +1,33 @@
+[2:2:38.151] Global cache location '/home/furkan/.cache/typescript/4.0', safe file path '/usr/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/lib/node_modules/typescript/lib/typesMap.json
+[2:2:38.152] Processing cache location '/home/furkan/.cache/typescript/4.0'
+[2:2:38.152] Trying to find '/home/furkan/.cache/typescript/4.0/package.json'...
+[2:2:38.153] Loaded content of '/home/furkan/.cache/typescript/4.0/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.520"},"devDependencies":{"@types/core-js":"^2.5.4","@types/jquery":"^3.5.1"}}
+[2:2:38.153] Loaded content of '/home/furkan/.cache/typescript/4.0/package-lock.json'
+[2:2:38.167] Adding entry into typings cache: 'core-js' => '/home/furkan/.cache/typescript/4.0/node_modules/@types/core-js/index.d.ts'
+[2:2:38.174] Adding entry into typings cache: 'jquery' => '/home/furkan/.cache/typescript/4.0/node_modules/@types/jquery/index.d.ts'
+[2:2:38.174] Finished processing cache location '/home/furkan/.cache/typescript/4.0'
+[2:2:38.175] Process id: 32503
+[2:2:38.175] NPM location: /usr/bin/npm (explicit '--npmLocation' not  provided)
+[2:2:38.175] validateDefaultNpmLocation: false
+[2:2:38.175] Npm config file: /home/furkan/.cache/typescript/4.0/package.json
+[2:2:38.175] Updating types-registry npm package...
+[2:2:38.175] Exec: /usr/bin/npm install --ignore-scripts types-registry@latest
+[2:2:39.757]     Succeeded. stdout:
+    + types-registry@0.1.521
+    updated 1 package and audited 4 packages in 1.004s
+found 0 vulnerabilities
+
+
+[2:2:39.758] Updated types-registry npm package
+[2:2:39.792] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/lib/node_modules/typescript/lib/lib.d.ts","/usr/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/furkan/projects/python/yusuf-cdtp/static/app.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/furkan/projects/python/yusuf-cdtp/static","kind":"discover"}
+[2:2:39.814] Loaded safelist from types map file '/usr/lib/node_modules/typescript/lib/typesMap.json'
+[2:2:39.814] Explicitly included types: []
+[2:2:39.815] Inferred typings from unresolved imports: []
+[2:2:39.815] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/furkan/projects/python/yusuf-cdtp/static/bower_components","/home/furkan/projects/python/yusuf-cdtp/static/node_modules"]}
+[2:2:39.815] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/furkan/projects/python/yusuf-cdtp/static/bower_components","/home/furkan/projects/python/yusuf-cdtp/static/node_modules"]}
+[2:2:39.816] DirectoryWatcher:: Added:: WatchInfo: /home/furkan/projects/python/yusuf-cdtp/static/bower_components
+[2:2:39.817] DirectoryWatcher:: Added:: WatchInfo: /home/furkan/projects/python/yusuf-cdtp/static/node_modules
+[2:2:39.818] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[2:2:39.818] Response has been sent.
+[2:2:39.818] No new typings were requested as a result of typings discovery

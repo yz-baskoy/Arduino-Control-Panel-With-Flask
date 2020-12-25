@@ -18,11 +18,11 @@ function get_current_temperatures() {
 
 setTimeout(get_current_temperatures, interval);
 
-function set_temperature(sera_number, temperature) {
+function set_temperature(sera_name, temperature) {
   $.ajax({
     type: "POST",
     url: `http://127.0.0.1:5000/set-temperature/`,
-    data: { sera_number: sera_number, temperature: temperature },
+    data: { sera_name: sera_name, temperature: temperature },
     success: function (data) {
       //
     },
