@@ -32,4 +32,15 @@ function set_temperature(sera_name, temperature) {
   });
 }
 
-set_temperature(3, 35);
+$("#formid").submit(function(event) {
+
+  event.preventDefault();
+
+  var $form = $(this);
+  var url = $form.attr('action');
+
+  var posting = $.post(url, {
+    sera_name: $('#sera_name').val(),
+    temperature: $('#temperature').val()
+  });
+});

@@ -1,6 +1,6 @@
 import requests
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_apscheduler import APScheduler
 from flask_cors import CORS
 
@@ -9,8 +9,8 @@ scheduler = APScheduler()
 CORS(app)
 
 ip_addresses = {
-    "Sera1": "127.0.0.1:8000",
-    "Sera2": "",
+    "Sera1": "",
+    "Sera2": "127.0.0.1:8000",
     "Sera3": "",
     "Sera4": "",
 }
@@ -32,7 +32,7 @@ def collect_temperatures():
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("base.html")
 
 
 @app.route("/current-temperatures/")
@@ -42,20 +42,11 @@ def current_temperature():
 
 @app.route("/set-temperature/", methods=["POST"])
 def set_temperature():
-    """
-    JS'den post atılıp sera numarası ve değer verilecek, bu değerler ile o sera'nın
-    ip'si ile endpointine istek atılacak.
-    Alacak:
-    {
-      "sera_name": "Sera1",
-      "temperature": 34
-    }
-    Gönderecek:
-    {
-      "temperature": 34
-    }
-    """
-    pass
+    sera_name = request.form["sera_name"]
+    temperature = request.form["temperature"]
+    requests.post("http://" + ip_addresses[sera_name] + "/set-temperature/", json={"temperature": temperature} )
+
+
 
 
 if __name__ == "__main__":
