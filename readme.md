@@ -6,7 +6,9 @@
 1)pip -V
 ```
 
+```bash
 2)if pip doesnt installed then type ```python get-pip.py``` to python shell
+```
 
 ```bash
 3)pip install virtualenv
@@ -38,7 +40,7 @@
 
 ## Usage
 
->client.py 
+>client.py
 
 this file must run in machine that work with arduino and client side
 
@@ -48,7 +50,7 @@ SERA_NAME = "Sera2" --> machine has its own name
 
 ip_addresses dictionary, must design for other clients name and ip adresses
 
-# Contributors
+## Contributors
 
 - [furkankaratas](https://github.com/KaratasFurkan)
 
