@@ -7,7 +7,7 @@
 ```
 
 ```bash
-2)if pip doesnt installed then type ```python get-pip.py``` to python shell
+2)if pip doesnt installed then type python get-pip.py to python shell
 ```
 
 ```bash
