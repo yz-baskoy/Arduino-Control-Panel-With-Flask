@@ -41,4 +41,4 @@ def set_temperature():
 
 if __name__ == '__main__':
     ser = serial.Serial('COM1', baudrate = 9600, timeout=1)
-    app.run(port=8000, debug=True)  # birden çok cihaz varken port ayarlamaya gerek yok
+    app.run(port=8000, debug=True)
